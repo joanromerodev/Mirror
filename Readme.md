@@ -11,7 +11,9 @@ Overall, Mirror is a user-friendly application that streamlines user management 
 > Framework or Language
 
 - [Node](https://nodejs.org/en) - Node.js is a back-end JavaScript runtime environment, runs on the V8 JavaScript Engine, and executes JavaScript code outside a web browser
-  > Databases
+
+> Databases
+
 - [MongoDB](https://www.mongodb.com/) - Source-available cross-platform document-oriented database program. Classified as a NoSQL database program, MongoDB uses JSON-like documents with optional schemas
 
 > Libraries, modules and packages
@@ -28,11 +30,17 @@ Overall, Mirror is a user-friendly application that streamlines user management 
 
 To better understand how to install, use and deploy the app, you can select what directory or technology you are interested in by clicking the options below:
 
-- 1.  [Front End - React JS](https://github.com/joanromerodev/Mirror/tree/main/1.%20FrontEnd%20-%20React) - Only FrontEnd code developed using React, with the use of different components and libraries to successfully build the views of the app
-- 2.  [Back End - Node JS](https://github.com/joanromerodev/Mirror/tree/main/2.%20BackEnd%20-%20Node) - Only BackEnd code developed using Node, creating a REST API that will return data stored in the MongoDB by using the routing of Express.
-- 3.  [Built App](https://github.com/joanromerodev/Mirror/tree/main/3.%20Built%20App) - Already built app after building the React FrontEnd using Vite and then placing the built files into the static folder of the Node BackEnd code.
+- 1.[Front End - React JS](https://github.com/joanromerodev/Mirror/tree/main/1.%20FrontEnd%20-%20React) - Only FrontEnd code developed using React, with the use of different components and libraries to successfully build the views of the app
+- 2.[Back End - Node JS](https://github.com/joanromerodev/Mirror/tree/main/2.%20BackEnd%20-%20Node) - Only BackEnd code developed using Node, creating a REST API that will return data stored in the MongoDB by using the routing of Express.
+- 3.[Built App](https://github.com/joanromerodev/Mirror/tree/main/3.%20Built%20App) - Already built app after building the React FrontEnd using Vite and then placing the built files into the static folder of the Node BackEnd code.
 
 This repository was separated in different folders in order to show in a detailed way every part of the app such as the front using React, back using Node and both consolidated projects ready to deploy so that way you can choose the path of your preference and work with it.
+
+## Deployed App
+
+In the following URL, you'll find a deployed version of the app, so you can test it and see how it works. Since I'm using a free to deploy Node server, it may take a few seconds to load the app, so please be patient.
+
+[Mirror: Users Management App](https://mirrorapp.onrender.com/)
 
 ## License
 
