@@ -1,6 +1,6 @@
 # Back End - Node JS 👨🏻‍💻 
 
-Mirror app was developed using React JS and powered by Tailwind CSS. It offers a seamless user experience for managing users in a database. With the help of React JS, the app provides dynamic and interactive features. The integration of libraries such as Sweet Alert enhances the user interface with beautiful and responsive alert boxes. React Hook Form simplifies form handling and validation, ensuring a smooth user input experience. Vite is utilized for efficient testing and building of the application. Together, these technologies and libraries contribute to Mirror's user-friendly interface and efficient functionality.
+Mirror app was
 
 ## Technologies
 
@@ -21,8 +21,6 @@ You must have already installed:
 - Node (latest version) : See [how to install](https://nodejs.dev/en/learn/how-to-install-nodejs/) NodeJS
 
 - Visual Studio Code : See how to install VS Code for [Windows](https://code.visualstudio.com/docs/setup/windows), [Mac](https://code.visualstudio.com/docs/setup/mac) or [Linux](https://code.visualstudio.com/docs/setup/linux)
-
-## How to install
 
 ### Clone the project
 
@@ -87,3 +85,78 @@ npm install
 ```
 
 This will install all of the modules and packages existing in the package.json file
+
+### Understanding the project structure
+
+The project is structured in the following way:
+
+```
+
+Mirror
+├── BackEnd - Node
+│   ├── controllers
+│   │   ├── usersController.js // Contains all the logic for the users endpoints
+│   ├── middlewares
+│   │   ├── validateFields.js // Middleware to validate the fields of the request, it uses express-validator
+│   ├── models
+│   │   ├── Role.js // Model for the Role collection
+│   │   ├── User.js // Model for the User collection
+│   │   ├── Server.js // Model for the server of the app, it contains the logit to start the server, middlewares and connect to the database and listen to the port
+│   ├── helpers
+│   │   ├── dbValidators.js // Contains the logic to validate the fields of the request sent to the database, it uses express-validator
+│   ├── public
+│   │   ├── // Every static file to render the front end of the app
+│   ├── routes
+│   │   ├── users.js // Contains all the endpoints for the users
+│   ├── database
+│   │   ├── config.js // Contains the logic to connect to the database using Mongoose and dotenv
+│   ├── .env // Contains the environment variables
+│   ├── .gitignore  // Contains the files and folders to ignore
+│   ├── app.js // It basically calls an instance of the Server model and starts the server
+│   ├── package-lock.json
+│   ├── package.json // Contains all the dependencies and scripts to run the app
+│   ├── Readme.md
+
+```
+
+### Environment variables
+
+The environment variables are stored in the **_.env_** file. This file is ignored by the **_.gitignore_** file, so you'll have to create it manually. Inside the **_.env_** file, you'll have to add the following variables:
+
+```
+
+PORT=3000
+
+DB_CNN=mongodb+srv://[user]:[password]@[url]/[database]?retryWrites=true&w=majority
+
+```
+
+### Database
+
+The database used for this project is MongoDB. To connect to the database, you'll have to create a cluster in [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) and add the connection string to the **_.env_** file.
+
+Since there is a model for the User collection, by just making a POST request to the endpoint **_/api/users_** you'll be able to create a new user in the database.
+
+### Run the project
+
+To run the project, you'll have to run the following command in your command shell:
+
+```
+
+npm run dev
+
+```
+
+This will run the project in development mode. If you want to run it in production mode, you'll have to run the following command:
+
+```
+
+npm start
+
+```
+
+### LICENSE
+
+MIT
+
+**Free Software, Hell Yeah!**
